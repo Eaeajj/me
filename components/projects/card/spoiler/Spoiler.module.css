@@ -1,0 +1,31 @@
+.details {
+  display: block;
+  background: transparent;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+.summary {
+  height: 40px;
+  align-items: center;
+
+  padding: 0.3em 0.3em 0.3em 2em;
+  font-size: 1em;
+  cursor: pointer;
+  position: relative;
+}
+
+.details p {
+  border-top: 1px solid var(--foreground);
+  padding-top: 10px;
+}
+
+.list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+.list li {
+  margin-top: 15px;
+}

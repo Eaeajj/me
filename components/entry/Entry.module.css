@@ -1,0 +1,28 @@
+.container {
+  margin-top: 10vmin;
+  display: flex;
+  margin-bottom: 8vmin;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.container h1 {
+  padding: 0 10vw 0 10vw;
+  text-align: center;
+}
+
+.secondary {
+  display: none;
+}
+
+@media (max-width: 470px) {
+  .secondary {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .secondary a {
+    color: var(--foreground);
+  }
+}

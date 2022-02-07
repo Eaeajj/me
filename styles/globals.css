@@ -1,16 +1,59 @@
+:root {
+  /* Your default theme */
+  --background: #fff;
+  --foreground: #000;
+  --secondary: #eee;
+  --link: rgb(22, 30, 143);
+  --box-shadow: 0px 4px 10px 7px rgba(66, 81, 90, 0.3);
+}
+
+[data-theme="dark"] {
+  --background: #222;
+  --foreground: #fff;
+  --secondary: #111;
+  --link: rgb(73, 164, 221);
+  --box-shadow: 0px 4px 10px 7px rgba(32, 68, 90, 0.3);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--background);
+  scroll-padding-top: calc(4vmin + 30px);
+  font-family: "Inconsolata";
+  src: local("../public/Inconsolata-VariableFont_wdth,wght.ttf");
 }
 
 a {
-  color: inherit;
+  color: var(--link);
   text-decoration: none;
+  font-family: "Inconsolata";
+  src: local("../public/Inconsolata-VariableFont_wdth,wght.ttf");
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+ul,
+li {
+  height: min-content;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 30px 15px 30px 15px;
+}
+
+section:nth-child(2n) {
+  background-color: var(--secondary);
 }
